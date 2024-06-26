@@ -1,0 +1,153 @@
+.gallery__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px; 
+    border: 1px solid transparent;
+}
+
+.folder__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.folder__img{
+    margin-bottom: 2vh;
+}
+
+
+.folder-open {
+    display: none;
+}
+
+.folder:hover .folder-close {
+    display: none;
+}
+
+.folder:hover .folder-open {
+    display: flex;
+    
+}
+
+.folder.active .folder-close {
+    display: none;
+}
+
+.folder.active .folder-open {
+    display: flex;
+}
+
+.folder > p {
+    padding-top: 2vh;
+}
+
+.image-gallery {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.graphic-design {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    height: auto;
+    cursor: move;
+}
+
+.illustration-img {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    height: 70%;
+    cursor: move;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox > img {
+    width: 70%;
+}
+
+.flexbox .other-img {
+    width: 30%;
+    margin-right: 10%;
+}
+
+.flexbox .other-img:last-child {
+    margin-right: 0;
+}
+
+.gallery-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.static-element {
+    display: none;
+    text-align: center;
+    position: absolute;
+}
+
+.static-element__seen {
+    text-align: center;
+    display: block;
+    margin-bottom: 2vh;
+}
+
+.static-element__seen > img {
+    margin-bottom: 1vh;
+}
+
+@media (max-width: 1200px) {
+    .gallery__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .folder {
+        width: calc(33.33% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .folder {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .folder {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .graphic-design, .illustration-img{
+        left: 10%;
+    }
+    .flexbox > img {
+        width: 100%;
+    }
+    .flexbox .other-img {
+        width: 40%;
+        margin-right: 6vw;
+    }
+}
+

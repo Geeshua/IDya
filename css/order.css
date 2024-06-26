@@ -1,0 +1,49 @@
+.order {
+    max-width: 50vw;
+    margin: 5vh auto;
+    padding: 2vh 2vw;
+    background-color: #A006F5;
+}
+
+.order h2 {
+    text-align: center;
+    color: #E9E4D7;
+    margin-bottom: 2vh;
+}
+
+.order form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order form label {
+    margin-bottom: 1vh;
+    color: #6FFF00;
+}
+
+.order form input,
+.order form textarea {
+    padding: 2vh 1vw;
+    margin-bottom: 2vh;
+    border: 0.1vh solid #E9E4D7;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order form button {
+    padding: 2vh 3vw;
+    font-family: "JuliaEngstrm";
+    color: #6FFF00;
+    background-color: #222127;
+    border: none;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.order form button:hover {
+    background-color: #E9E4D7;
+    color: #A006F5;
+}

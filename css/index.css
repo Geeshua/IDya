@@ -1,0 +1,135 @@
+.hello__container{
+    display: flex;
+}
+
+.avatar__frame{
+    margin-right: 3vw;
+    border: solid 1vh #6FFF00;
+    flex-shrink: 0;
+}
+
+
+.hello__title, .about__title{
+    display: flex;
+    align-items: flex-end;
+    font-size: 2vw;
+    margin-bottom: 2vh;
+}
+
+.hello__title--img, .about__title--img{
+    margin-right: 3vw;
+}
+
+.hello__subtitle, .about__subtitle{
+    font-size: 3vh;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 4vh;
+}
+.about__subtitle{
+    white-space: pre-line;
+    margin-bottom: 30vh;
+}
+
+.hello__fields--text{
+    margin-bottom: 3vh;
+}
+
+.hello__fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.hello__fields>a{
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.hello__fields--link1>img,
+.hello__fields--link2>img,
+.hello__fields--link3>img{
+    margin-left: 3vw;
+    margin-right: 1vw;
+}
+
+
+
+.about__text{
+    font-family: "JuliaEngstrm";
+    font-size: 6vh;
+    color: #6FFF00;
+    position: absolute;
+}
+.about__text:hover{
+    color: #A006F5;
+    transform: rotate(0deg);
+    transition: ease-in-out 0.3s;
+}
+
+.about__text--1 { top: 103vh; left: 10vw; transform: rotate(10deg);}
+.about__text--2 { top: 115vh; left: 12vw; transform: rotate(-2deg);}
+.about__text--3 { top: 110vh; left: 46vw; transform: rotate(10deg);}
+.about__text--4 { top: 103vh; left: 30vw; transform: rotate(-10deg);}
+.about__text--5 { top: 110vh; left: 70vw;transform: rotate(10deg);}
+.about__text--6 { top: 100vh; left: 70vw; transform: rotate(10deg);}
+
+
+@media screen and (max-width: 1024px) {
+    .logo__container{
+        width: 20%;
+    }
+    .logo__img{
+        width: 100%;
+    }
+    .hello__subtitle, .about__subtitle{
+        font-size: 2vh;
+    }
+    .about__text{
+        font-size: 4vh;
+    }
+
+    .about__text--1 { top: 105vh; }
+    .about__text--2 { top: 120vh; }
+    .about__text--3 { top: 115vh; }
+    .about__text--4 { top: 108vh; }
+    .about__text--5 { top: 115vh; }
+    .about__text--6 { top: 105vh; }
+
+}
+
+@media screen and (max-width: 768px) {
+    nav>a{
+        font-size: 2vh;
+        margin-right: 4vw;
+    }
+    .avatar__frame{
+        margin-bottom: 8vh;
+    }
+    
+    .hello__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hello__title, .about__title {
+        font-size: 4vh;
+        justify-content: center;
+    }
+
+    .hello__subtitle, .about__subtitle {
+        font-size: 4vh;
+    }
+
+    .hello__fields{
+        padding-left: 6vw;
+        font-size: 2.8vh;
+    }
+
+    .about__text--1 { top: 195vh; }
+    .about__text--2 { top: 210vh; }
+    .about__text--3 { top: 205vh; }
+    .about__text--4 { top: 198vh; }
+    .about__text--5 { top: 205vh; }
+    .about__text--6 { top: 195vh; }
+}

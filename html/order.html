@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IDya Галерея - Профессиональные услуги графического дизайна, UI/UX дизайна и иллюстрации. Ознакомьтесь с нашим портфолио и закажите уникальные дизайны для вашего проекта.">
+    <meta name="keywords" content="IDya, графический дизайн, UI/UX дизайн, иллюстрация, портфолио, заказать дизайн, профессиональный дизайн, дизайн проекты, креативные услуги, дизайн студия">
+    <title>IDya-order</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/contacts.js"></script>
+    <script src="../js/order.js"></script>
+
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo.svg" alt="IDya logo">
+        </div>
+        <nav>
+            <a href="../index.html">обо мне</a>
+            <a href="../html/gallery.html">галерея</a>
+            <a href="../html/order.html">заказать</a>
+        </nav>
+        <div class="contacts">
+            <img class="contacts__img" src="../img/contacts.svg" alt="contacts">
+            <div class="contacts__menu">
+                <a href="https://www.twitch.tv" target="_blank">
+                    <img src="../img/twitch_icon.svg" alt="Twitch">
+                </a>
+                <a href="https://t.me/IDyaOrders_bot" target="_blank">
+                    <img src="../img/telegram_icon.svg" alt="Telegram">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../img/instagram_icon.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="order">
+            <h2>Закажите дизайн!</h2>
+            <form id="orderForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="topic">Тема:</label>
+                <input type="text" id="topic" name="topic" required>
+                <label for="order">Заказ:</label>
+                <textarea id="order" name="order" required></textarea>
+                <div class="buttons">
+                <button type="reset">clear</button>
+                <button type="submit">send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
